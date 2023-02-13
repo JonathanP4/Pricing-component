@@ -1,0 +1,29 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+input,
+button,
+button:focus {
+   border: 0;
+   outline: 0;
+   cursor: pointer;
+   -webkit-tap-highlight-color: transparent;
+}
+
+img {
+   max-width: 100%;
+}
+
+a {
+   text-decoration: none;
+   color: inherit;
+}
+
+button,
+button:focus {
+   outline: 0;
+   border: 0;
+}
