@@ -59,7 +59,6 @@ button {
 }
 
 .plans-container {
-   margin: 0 auto;
    width: 90%;
 }
 
@@ -112,10 +111,9 @@ button {
 }
 
 @media (min-width: 1060px) {
-   .wrapper {
-      position: fixed;
-      top: 0;
-      bottom: 0;
+   body {
+      @include flex();
+      min-height: 733px;
    }
 
    .our-pricing {

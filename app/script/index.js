@@ -18,3 +18,6 @@ time.addEventListener('click', () => {
 time.addEventListener('touchend', () => {
    setPrices(+time.value)
 })
+window.addEventListener('resize', () => {
+   document.body.style.height = `${window.innerHeight}px`
+})
