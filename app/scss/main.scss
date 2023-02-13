@@ -20,6 +20,7 @@ button {
    top: 0;
    right: 0;
    z-index: -1;
+   pointer-events: none;
 }
 
 .bg-bottom {
@@ -27,6 +28,7 @@ button {
    bottom: 0;
    left: 0;
    z-index: -1;
+   pointer-events: none;
 }
 
 .slider {
@@ -35,17 +37,22 @@ button {
    border-radius: 24px;
    width: 55px;
    background: map-get($colors, "gradient-right");
-   -webkit-appearance: none;
-   appearance: none;
+   position: relative;
+   cursor: pointer;
+   -webkit-tap-highlight-color: transparent;
 }
 
-.slider::-webkit-slider-thumb {
-   height: 24px !important;
-   width: 24px !important;
+.slider-thumb {
+   height: 24px;
+   width: 24px;
    border-radius: 100%;
    background: map-get($colors, "lighter-blue");
-   -webkit-appearance: none !important;
-   appearance: none !important;
+   transform: translateX(50%);
+   transition: all .3s;
+}
+
+.slider-thumb--active {
+   transform: translateX(-50%);
 }
 
 .slider:hover {
