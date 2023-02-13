@@ -7,7 +7,7 @@ body {
    font-family: 'Montserrat', sans-serif;
    font-size: 15px;
    min-width: 375px;
-   background-color: hsla(236, 87%, 94%, 0.815);
+   background-color: hsla(236, 87%, 94%, 0.5);
    position: relative;
 }
 
@@ -33,19 +33,19 @@ button {
    height: 30px;
    padding: 3px;
    border-radius: 24px;
-   width: 17%;
+   width: 55px;
    background: map-get($colors, "gradient-right");
    -webkit-appearance: none;
    appearance: none;
 }
 
 .slider::-webkit-slider-thumb {
-   height: 24px;
-   width: 24px;
+   height: 24px !important;
+   width: 24px !important;
    border-radius: 100%;
    background: map-get($colors, "lighter-blue");
-   -webkit-appearance: none;
-   appearance: none;
+   -webkit-appearance: none !important;
+   appearance: none !important;
 }
 
 .slider:hover {
