@@ -113,7 +113,9 @@ button {
 
 @media (min-width: 1060px) {
    .wrapper {
-      height: 100vh;
+      position: fixed;
+      top: 0;
+      bottom: 0;
    }
 
    .our-pricing {
