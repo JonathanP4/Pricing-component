@@ -4,6 +4,7 @@ const prices = document.querySelectorAll('.price');
 const basePrices = [19.99, 24.99, 39.99]
 
 time.value = 1
+document.body.style.height = `${window.innerHeight}px`
 
 const setPrices = val => {
    console.log(val);
