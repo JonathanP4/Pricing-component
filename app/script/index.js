@@ -9,16 +9,25 @@ if (window.innerHeight > 733) {
 }
 
 const setPrices = cond => {
-   console.log(cond);
    prices.forEach((p, i) => {
       p.textContent = `${cond === true ? ((basePrices[i] * 10) + 0.09).toFixed(2) : basePrices[i]}`
    });
 }
-time.addEventListener('click', () => {
+const planTimeFunction = () => {
    sliderThumb.classList.toggle('slider-thumb--active')
    const cond = sliderThumb.classList.contains('slider-thumb--active')
 
    setPrices(cond)
+}
+time.addEventListener('click', planTimeFunction)
+window.addEventListener('keydown', (e) => {
+   if (e.code === 'ArrowLeft') {
+      sliderThumb.classList.remove('slider-thumb--active')
+      planTimeFunction()
+   } else if (e.code === 'ArrowRight') {
+      sliderThumb.classList.add('slider-thumb--active')
+      planTimeFunction()
+   }
 })
 window.addEventListener('resize', () => {
    if (window.innerHeight > 733) {
