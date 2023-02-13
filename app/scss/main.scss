@@ -7,10 +7,26 @@ body {
    font-family: 'Montserrat', sans-serif;
    font-size: 15px;
    min-width: 375px;
+   background-color: hsla(236, 87%, 94%, 0.815);
+   position: relative;
 }
 
 button {
    text-transform: uppercase;
+}
+
+.bg-top {
+   position: absolute;
+   top: 0;
+   right: 0;
+   z-index: -1;
+}
+
+.bg-bottom {
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   z-index: -1;
 }
 
 .slider {
@@ -114,6 +130,10 @@ button {
    body {
       @include flex();
       min-height: 733px;
+   }
+
+   .plans-container {
+      width: 80%;
    }
 
    .our-pricing {

@@ -12,21 +12,23 @@
 </head>
 
 <body>
-   <div class="wrapper">
+   <img class="bg-top" src="./dist/img/bg-top.svg" alt="bg-top">
+   <img class="bg-bottom" src="./dist/img/bg-bottom.svg" alt="bg-bottom">
+   <main class="wrapper">
       <div class="our-pricing">
          <h1 class="text-blue text-xl">Our Pricing</h1>
          <div class="text-light-blue text-sm">
             <span>Annually</span>
-            <input class="slider" type="range" name="range" id="time" min="1" max="2">
+            <input class="slider" aria-label="range" type="range" id="time" min="1" max="2">
             <span>Monthly</span>
          </div>
       </div>
       <div class="plans-container">
-         <div class="plan plan--1 text-blue">
+         <div class="plan plan--1 text-blue bg-lighter-blue">
             <h1 class="text-lg">Basic</h1>
             <h1 class="price-title text-xxl text-dark-blue">
                <span class="text-xl">$</span>
-               <span class="price">199.99</span>
+               <span class="price">19.99</span>
             </h1>
             <hr>
             <p class="text-md">500 GB Storage</p>
@@ -42,7 +44,7 @@
             <h1 class="text-lg">Professional</h1>
             <h1 class="price-title text-xxl">
                <span class="text-xl">$</span>
-               <span class="price">249.99</span>
+               <span class="price">29.99</span>
             </h1>
             <hr>
             <p class="text-md">1 TB Storage</p>
@@ -54,11 +56,11 @@
             <button class="bg-lighter-blue btn-purple--hover text-purple text-md">Learn more</button>
          </div>
 
-         <div class="plan plan--3 text-blue">
+         <div class="plan plan--3 text-blue bg-lighter-blue">
             <h1 class="text-lg">Master</h1>
             <h1 class="price-title text-xxl text-dark-blue">
                <span class="text-xl">$</span>
-               <span class="price">399.99</span>
+               <span class="price">39.99</span>
             </h1>
             <hr>
             <p class="text-md">2 TB Storage</p>
@@ -70,7 +72,7 @@
             <button class="bg-gradient-right btn-white--hover text-lighter-blue text-md">Learn more</button>
          </div>
       </div>
-   </div>
+   </main>
 </body>
 
 </html>
